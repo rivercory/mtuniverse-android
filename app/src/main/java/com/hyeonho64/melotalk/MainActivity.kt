@@ -1,16 +1,20 @@
 package com.hyeonho64.melotalk
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout.OnRefreshListener
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val myWeb = findViewById<WebView>(R.id.webview)
+        val layoutswiperefresh = findViewById<SwipeRefreshLayout>(R.id.layout_swipe_refresh)
 
         myWeb.webViewClient = WebViewClient()
         myWeb.getSettings().setSupportZoom(true);
@@ -24,5 +28,10 @@ class MainActivity : AppCompatActivity() {
             loadUrl("http://melotalk.vercel.app")
             settings.javaScriptEnabled = true
         }
+
+        layoutswiperefresh.setOnRefreshListener(OnRefreshListener {
+            myWeb.reload()
+            layoutswiperefresh.setRefreshing(false)
+        })
     }
 }
