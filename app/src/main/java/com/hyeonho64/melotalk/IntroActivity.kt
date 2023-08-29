@@ -12,8 +12,8 @@ class IntroActivity : AppCompatActivity() {
         val handler = Handler()
         handler.postDelayed(Runnable {
             val intent = Intent(applicationContext, MainActivity::class.java)
-            startActivity(intent) //인트로 실행 후 바로 MainActivity로 넘어감.
+            startActivity(intent)
             finish()
-        }, 1000) //1초 후 인트로 실행
+        }, 2000)
     }
 }
