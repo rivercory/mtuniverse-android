@@ -29,6 +29,10 @@ class MainActivity : AppCompatActivity() {
             settings.javaScriptEnabled = true
         }
 
+        layoutswiperefresh.setColorSchemeResources(
+            android.R.color.holo_blue_light
+        );
+
         layoutswiperefresh.setOnRefreshListener(OnRefreshListener {
             myWeb.reload()
             layoutswiperefresh.setRefreshing(false)
