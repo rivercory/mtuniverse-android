@@ -19,8 +19,9 @@ class MainActivity : AppCompatActivity() {
         myWeb.webViewClient = WebViewClient()
         myWeb.getSettings().setSupportZoom(true);
         myWeb.getSettings().setJavaScriptEnabled(true);
+        myWeb.settings.javaScriptCanOpenWindowsAutomatically = true;
+        myWeb.settings.domStorageEnabled = true;
         myWeb.getSettings().setLoadsImagesAutomatically(true);
-        myWeb.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         myWeb.getSettings().setBuiltInZoomControls(false);
         myWeb.getSettings().setCacheMode(WebSettings.LOAD_DEFAULT);
 
