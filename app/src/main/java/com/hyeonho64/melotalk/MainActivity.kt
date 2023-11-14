@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         layoutswiperefresh.setColorSchemeResources(
-            android.R.color.holo_blue_light
+            R.color.primarycolor
         );
 
         layoutswiperefresh.setOnRefreshListener(OnRefreshListener {
