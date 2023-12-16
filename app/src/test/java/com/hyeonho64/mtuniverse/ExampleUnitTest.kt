@@ -1,4 +1,4 @@
-package com.hyeonho64.melotalk
+package com.hyeonho64.mtuniverse
 
 import org.junit.Test
 

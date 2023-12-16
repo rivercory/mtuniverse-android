@@ -1,4 +1,4 @@
-package com.hyeonho64.melotalk
+package com.hyeonho64.mtuniverse
 
 import android.content.Intent
 import android.os.Bundle
