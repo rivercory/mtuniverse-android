@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.hyeonho64.mtuniverse"
+    namespace = "com.rivercory.mtuniverse"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.hyeonho64.mtuniverse"
+        applicationId = "com.rivercory.mtuniverse"
         minSdk = 24
         targetSdk = 33
         versionCode = 1

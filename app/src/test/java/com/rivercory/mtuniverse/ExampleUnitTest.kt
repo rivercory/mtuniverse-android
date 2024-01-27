@@ -1,4 +1,4 @@
-package com.hyeonho64.mtuniverse
+package com.rivercory.mtuniverse
 
 import org.junit.Test
 

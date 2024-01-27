@@ -1,4 +1,4 @@
-package com.hyeonho64.mtuniverse
+package com.rivercory.mtuniverse
 
 import android.content.Intent
 import android.os.Bundle
@@ -14,6 +14,6 @@ class IntroActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, MainActivity::class.java)
             startActivity(intent)
             finish()
-        }, 2000)
+        }, 1000)
     }
 }
